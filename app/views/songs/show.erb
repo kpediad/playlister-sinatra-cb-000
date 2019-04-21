@@ -9,3 +9,7 @@
     <li><a href="/genres/<%=genre.slug%>"><%=genre.name%></a></li>
   <%end%>
 </ul>
+<br>
+<form action="/songs/<%=@song.slug%>" method="get">
+  <input type="submit" name="submit" value="Edit Song">
+</form>
