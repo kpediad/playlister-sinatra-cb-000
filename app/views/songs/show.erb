@@ -10,9 +10,7 @@
   <%end%>
 </ul>
 <br>
-<form action="/songs/<%=@song.slug%>" method="get">
-  <input type="submit" name="submit" value="Edit Song">
-</form>
-<form action="/songs/new" method="get">
-  <input type="submit" name="submit" value="New Song">
+<form method="get">
+  <button type="submit" formaction="/songs/<%=@song.slug%>">Edit Song</button>
+  <button type="submit" formaction="/songs/new">New Song</button>
 </form>
